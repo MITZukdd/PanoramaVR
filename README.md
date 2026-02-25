@@ -3,8 +3,6 @@
 **VPanoramaVR** is a unity package offers tools, scripts and prefabs to create immersive 360° VR experiences in Unity
 
 ## Features
-
-## Features
 * Spheres with Insideout shader that displays 360° panoramas for users
 * navigation between views
 * supports showing screen-space ui in VR
