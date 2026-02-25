@@ -1,0 +1,34 @@
+{
+  "name": "com.MITZ.PanoramaVR",
+  "version": "1.0.0",
+  "displayName": "PanoramaVR",
+  "description": "This Unitypackage offers tools, scripts and prefabs to create immersive 360° VR experiences in Unity",
+  "documentationUrl": "https://github.com/MITZukdd/PanoramaVR",
+  "changelogUrl": "https://github.com/MITZukdd/PanoramaVR",
+  "licensesUrl": "https://github.com/MITZukdd/PanoramaVR/blob/main/LICENSE.txt",
+  "license": "CC-BY-SA-4.0",
+  "hideInEdittor": "false",
+  "dependencies": {
+	"com.nobi.roundedcorners": "https://github.com/CelinaStransky/Unity-UI-Rounded-Corners.git",
+	"com.unity.render-pipelines.universal": "14.0.11",
+	"com.unity.textmeshpro": "3.0.9",
+	"com.unity.xr.core-utils": "2.3.0",
+    	"com.unity.xr.interaction.toolkit": "3.0.3",
+	"com.unity.xr.management": "4.4.0",
+	"com.unity.xr.oculus": "4.3.0",
+	"com.unity.xr.openxr": "1.13.0",
+	"com.unity.modules.vr": "1.0.0",
+	"com.unity.modules.xr": "1.0.0"
+ },
+ "keywords": [
+    "panorama",
+    "vr",
+    "360",
+    "tour"
+  ],
+  "author": {
+    "name": "MITZ",
+    "email": "mitz@ukdd.de",
+    "url": "https://tu-dresden.de/med/mf/idl/mitz"
+  }
+}
