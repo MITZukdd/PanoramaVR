@@ -1,0 +1,23 @@
+{
+	"name": "mitz.panoramavr",
+	"rootNamespace": "",
+	"references":[
+        "UnityEngine",
+        "UnityEngine.UI",
+        "UnityEngine.EventSystems",
+        "Unity.XR.Interaction.Toolkit",
+        "UnityEngine.XR.Interaction.Toolkit.Interactors",
+        "Unity.InputSystem",
+        "Unity.TextMeshPro",
+        "Unity.XR.CoreUtils"
+    ],
+	"includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

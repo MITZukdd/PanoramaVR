@@ -1,0 +1,19 @@
+{
+	"name": "mitz.panoramavr.Editor",
+	"rootNamespace": "",
+	"references":[
+        "UnityEditor",
+        "UnityEditor.PackageManager",
+        "UnityEditor.PackageManager.Requests",
+        "UnityEngine"
+    ],
+	"includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
