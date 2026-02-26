@@ -1,6 +1,6 @@
 # PanoramaVR
 
-**VPanoramaVR** is a unity package offers tools, scripts and prefabs to create immersive 360° VR experiences in Unity
+**PanoramaVR** is a unity package offers tools, scripts and prefabs to create immersive 360° VR experiences in Unity
 
 ## Features
 * Spheres with Insideout shader that displays 360° panoramas for users
@@ -23,12 +23,20 @@
 2. In the UnityHub add project from disc
 3. Switch Platform in buildsettings to android
 4. load `PanoramaVRSampleScene` scene from Assets/PanoramaVR/Samples
+5. If you encounter an issue where all textures and image files are missing/generate an import error, the culprit is most likely git lfs. Try running `git lfs install` and then `git lfs fetch`
 
-### Option 2 - Load Project as UnityProject into an existing project
-1. Go into the Unity Package manager
-2. Click "Add package from git URL"
-3. Enter ```https://github.com/MITZukdd/PanoramaVR?path=/Assets/PanoramaVR```
-4. load `PanoramaVRSampleScene` scene from Packages/PanoramaVR/Samples
+### Option 2 - Load Project as Unitypackage into an existing project
+0. Switch Platform in buildsettings to android, if not already done
+1. copy this into your manifest.json (located in the Packages directory) `"com.nobi.roundedcorners": "https://github.com/CelinaStransky/Unity-UI-Rounded-Corners.git",` and let Unity load the package
+2. Go into the Unity Package manager
+3. Click "Add package from git URL"
+4. Enter ```https://github.com/MITZukdd/PanoramaVR.git?path=/Assets/PanoramaVR``` and wait until everything has imported
+5. If a warning appears that the new Input system is not enabled in the player settings, click "YES" to enable the backends. This will restart the editor
+6. Go to *Package Manager* &rarr; *XR Interaction Toolkit* &rarr; *Samples* and import the *Starter Assets* and the *XR Device Simulator*
+7. If you want the package to be writable, go into the ``Tools`` Tab in the Unity Editor and click "Embed PanoramaVR Package". This will embed the package into your project and make the contents writable. <br> **Note** This severs the connection to the git repository
+8. If you made the package writable you can load `PanoramaVRSampleScene` scene from Packages/PanoramaVR/Samples. Otherwise you can copy the scene into your Asset folder and load it
+
+>**Note** This might generate Errors with Burst. This may be fixed by closing the project, deleting the Library folder and reopening the project 
 
 
 ## Project content
