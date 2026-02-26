@@ -35,7 +35,7 @@ public class HapticsManager : MonoBehaviour
     {
         foreach (Button button in FindObjectsOfType<Button>(true)) {
 
-            var trigger = button.AddComponent<ButtonFeedback>();
+            var trigger = button.gameObject.AddComponent<ButtonFeedback>();
             trigger.hoverAmplitude = hoverAmplitude;
             trigger.selectAmplitude = selectAmplitude;
             trigger.hoverDuration = hoverDuration;

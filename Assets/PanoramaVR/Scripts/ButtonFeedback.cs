@@ -1,10 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class ButtonFeedback : MonoBehaviour, IPointerEnterHandler
@@ -29,7 +25,7 @@ public class ButtonFeedback : MonoBehaviour, IPointerEnterHandler
         _audioSource = GetComponent<AudioSource>();
         if (_audioSource == null )
         {
-            _audioSource = button.AddComponent<AudioSource>();
+            _audioSource = button.gameObject.AddComponent<AudioSource>();
         }
         Destroy(button.GetComponent<EventTrigger>());
     }
